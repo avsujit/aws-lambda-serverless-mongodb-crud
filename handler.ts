@@ -6,7 +6,7 @@ const uri = "mongodb+srv://admin:admin@cluster0.lwdph.mongodb.net/app1?retryWrit
 const client = new MongoClient(uri, { useNewUrlParser: true });
 export const hello: APIGatewayProxyHandler = async (event, _context) => {
   let collection;
-const uri = "mongodb+srv://admin:<password>@cluster0.lwdph.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const uri = "";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   collection = client.db("app1").collection("tasks");
